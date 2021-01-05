@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { css, cx } from "@emotion/css";
+import { colours } from "./constants";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div
+      className={css`
+        background: ${colours.green};
+        min-height: 100vh;
+        display: flex;
+      `}
+    >
+      <div
+        className={css`
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        `}
+      >
+        <h1
+          className={css`
+            font-family: "Playfair Display", serif;
+            color: white;
+            size: 35px;
+            font-weight: 700;
+          `}
         >
-          Learn React
-        </a>
-      </header>
+          {" "}
+          Grologue{" "}
+        </h1>
+      </div>
     </div>
   );
 }
