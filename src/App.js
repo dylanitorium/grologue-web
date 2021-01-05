@@ -84,8 +84,6 @@ const Unauthenticated = () => {
 };
 
 function App() {
-  console.log(process.env);
-
   const [authenticating, setAuthenticating] = useState(true);
   const [user, setUser] = useState(null);
 
